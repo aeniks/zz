@@ -1,0 +1,1 @@
+wordd; convert -background "#fefdff"  -gravity center pango:"<span size='20000' font='monospace'>$(gum style --border none --padding '12 8' --margin '12 5' --align center $wotd $(cat wwoo.sh|tr "''" '*'))</span>" wwoo.jpg; 

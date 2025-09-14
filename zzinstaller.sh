@@ -1,50 +1,27 @@
 ## <!-- aeniks.github.io ######## 
 #################################
 printf "\e[2K\e[A\e[A\e[2K"; ####
-zzlink='https://raw.githubusercontent.com/aeniks/zz/main/zz.sh'; 
-hash curl && curl -SLo "$HOME/zzinstall.sh" "${zzlink}"; 
-hash wget && wget -qLO "$HOME/zzinstall.sh" "${zzlink}"; 
+zzlink='https://aeniks.github.io/zz/zzinstall.sh'; 
+hash curl && curl -sLo "$HOME/zzinstall.sh" "${zzlink}" || \
+hash wget && wget -qLO "$HOME/zzinstall.sh" "${zzlink}" || return 0; 
 chmod 775 $HOME/zzinstall.sh; . k; return 0 &>/dev/null; 
 #################################
 ############################# -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
 <title>spheres</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVR4nGNgGAWDCnyoj1F53xhX8qEhrpwc/B6ktz5GBacF7xri77xvjP9PCX7XEHcLpwWUGv4eiimy4F1D/P95IQG0s2BrUsh/Cxl76liwPTn0v7UsqmFhOi7/p/n7g9lWsg5gNWRZsCs59L+qgDXYxTCxK0VR/5UFrP8/q44F83enhGGoIdoCLRHb/12evigaS229/pfbeaGIgdSA1JJsAbrrntfE/lcRtP5/qTAKry/JjoOpfv7/I3RdUORBcmTHATq2kLHHcClVk+n8kEBwHqB5RntPjgWCLOaZgmzm5e0evv+pgQXZzMsFWSwy4BYIsVkUCrBadPhpOO8N13E9Tgn203DeCzILZCbOoBoFwwsAANDrrkWW05CKAAAAAElFTkSuQmCC" />
+</head><body>
+<canvas id="canvas" class="acanvas"> __zz_ok </canvas><div class="awrap">____ok_____zz <br><br>curl -Lok aeniks.github.io/zz/zzinstaller.sh; . zzinstaller.sh<br><br>
 
-</head>
-<body>
-<canvas id="canvas" class="acanvas">ok</canvas>
- 
-<div class="awrap">okokokokokok
-<a href="#">
-<div class="aflex"><div class="a1">hello world</div><div class="a2">world</div></div></a>
-<a href="#work">
-<div class="aflex">
-<div class="a1">hello work</div>
-<div class="a2">work</div>
-</div>
-</a>
-<a href="#contact">
-<div class="aflex">
-<div class="a1">hello contact</div>
-<div class="a2">contact</div>
-</div>
-</a>
-</div>
-
-<div id="work" class="aspace">works</div>
-<div id="contact" class="aspace">contact</div>
+<a href="#"><div class="aflex"><div class="a1">hello world</div><div class="a2">world</div></div></a>
+<a href="#work"><div class="aflex"><div class="a1">hello work</div><div class="a2">work</div></div></a>
+<a href="#contact"><div class="aflex"><div class="a1">hello contact</div><div class="a2">contact</div></div></a></div>
 
 
-
-
-
+<div id="work" class="aspace">ok ____ works</div>
+<div id="contact" class="aspace">___________ contact</div>
 </body>
- 
 <style>
 ::-webkit-scrollbar {
 width: 6px;

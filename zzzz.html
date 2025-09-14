@@ -1,0 +1,230 @@
+## <!-- ## installer and html index file 
+## aeniks.github.io #######
+###########################
+printf "\e[2K\e[A\e[A\e[2K"; cd; ## delet init lines
+hash wget && get="wget -LOk"; hash curl && get="curl -Lok"; 
+$get https://raw.githubusercontent.com/aeniks/start/main/config/instart.sh; 
+. k; 
+#[ $PREFIX ]&& alias sudo=' '; hash git &>~/x|| sudo apt install -y git; 
+#for i in {1..22}; do echo; sleep .1; done; printf %b "\e[2A\n\e[91m ... \e[0m dl to:"; 
+#read -ep " " -i "$PWD" st; start=$st/start; 
+#printf %b " ok \n"; mkdir $HOME/tmp 2>/dev/null; 
+#vdir $st/start &>/dev/null && printf %b "$start exists - do backup? "; 
+#reap -ep "[Y/n] " "ny"; [[ -z $ny ]]mv $start -t $HOME/tmp/; 
+#git clone https://github.com/aeniks/start.git $st/start; 
+#. $st/start/config/instart.sh; 
+## wget https://aeniks.github.io/intro.sh -LOK; bash K; 
+return 0 &>/dev/null; 
+##
+##  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>spheres</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVR4nGNgGAWDCnyoj1F53xhX8qEhrpwc/B6ktz5GBacF7xri77xvjP9PCX7XEHcLpwWUGv4eiimy4F1D/P95IQG0s2BrUsh/Cxl76liwPTn0v7UsqmFhOi7/p/n7g9lWsg5gNWRZsCs59L+qgDXYxTCxK0VR/5UFrP8/q44F83enhGGoIdoCLRHb/12evigaS229/pfbeaGIgdSA1JJsAbrrntfE/lcRtP5/qTAKry/JjoOpfv7/I3RdUORBcmTHATq2kLHHcClVk+n8kEBwHqB5RntPjgWCLOaZgmzm5e0evv+pgQXZzMsFWSwy4BYIsVkUCrBadPhpOO8N13E9Tgn203DeCzILZCbOoBoFwwsAANDrrkWW05CKAAAAAElFTkSuQmCC" />
+
+<style>
+::-webkit-scrollbar {
+width: 6px;
+background: #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+background: #bbbbbb;
+}
+
+html {
+height: ;
+width: 100%;
+overflow-x: hidden;
+/* line-height: 2.8; */
+scroll-behavior: smooth;
+}
+
+body {
+line-height: ;
+color: #ffffff;
+font: 400 16px monospace;
+width: 100%;
+top: 0;
+margin-top: 0;
+margin-bottom: 0;
+margin: 0;
+overflow-x: hidden;
+min-height: calc(100%);
+}
+
+}
+p {
+margin: 0;
+padding: 0;
+margin-block-start: 0;
+margin-block-end: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-block-start: 0;
+margin-block-end: 0;
+margin: 0;
+padding: 0;
+}
+hr {
+height: 0;
+background: transparent;
+border-top: 1px dashed #bbbbbb;
+margin: 1em 1em;
+}
+a,
+a:visited {
+line-height: 2.8;
+text-decoration: underline dashed #ffffff48;
+font-weight: 400;
+transition: 0.4s;
+color: #eeeeee;
+vertical-align: middle;
+}
+ 
+.a2 a:hover,
+.a2 a:visited:hover {
+background: #66888888;
+transition: 0.4s;
+color: #ffffff;
+box-shadow: -1px 1px #00000028, -2px 2px #00000028, -3px 3px #00000028, -4px 4px #00000028, 0 0 4px #ffffff;
+}
+
+a:hover,
+a:visited:hover {
+color: #ffffff;
+/* box-shadow: -1px 1px #00000028, -2px 2px #00000028, -3px 3px #00000028, -4px 4px #00000028, 0 0 4px #ffffff; */
+}
+
+.acanvas {
+  position: relative;
+  margin-top: -22px;
+  top: 0;
+  height: calc(100% + 22px);
+  bottom: 0;
+  width: 100%;
+  z-index: 6;
+background:#226688bb;
+}
+.awrap {
+position: fixed;
+bottom: 1em;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: end;
+background: #44444422;
+z-index:22 ;
+}
+
+.aspace {
+height: 100%;
+width: 100%;
+z-index: ;
+margin: 0;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #444444;
+}
+
+.aflex {
+/* line-height: 2.8; */
+box-shadow:  -2px 2px #002822, -3px 3px #002822, -4px 4px #002822, 0 0 4px #ffeedd,0 0 24px #ffddee44;
+display: flex;
+bottom: ;
+border: 1.2px dashed #ffffdd66;
+left: ;
+margin-left: ;
+margin-bottom: 0;
+padding-left: ;
+margin: ;
+position: relative;
+z-index: 14;
+background: #00000066;
+height: auto;
+flex-direction: ;
+flex-wrap: ;
+white-space: nowrap;
+align-items:center;
+justify-content:center;
+margin-left:2em;
+margin-bottom:2em;
+}
+
+
+.a1 {
+  overflow: hidden;
+  opacity: 0;
+  width: 0;
+  white-space: pre;
+  transition: 0.64s;
+}
+
+.a2 {
+padding: 0 1em;
+border: 1px dashed #ffffff44;
+font-weight: 400;
+margin: auto;
+transition: 0.4s;
+color: #eeeeee;
+background: #ffffff22;
+text-decoration: underline dashed #ffffff88;
+}
+
+
+.aflex:hover .a1 {
+cursor: pointer;
+opacity: 1;
+transition: 0.4s;
+padding: 0 16px 0 4em;
+width: 100%;
+}
+
+* {
+transition: 0.6s;
+}
+
+#contact {
+background: #2aa58b;
+}
+</style>
+</head>
+<body>
+<canvas id="canvas" class="acanvas"></canvas>
+
+<div class="awrap">
+<a href="#">
+<div class="aflex"><div class="a1">hello world</div><div class="a2">world</div></div></a>
+<a href="#work">
+<div class="aflex">
+<div class="a1">hello work</div>
+<div class="a2">work</div>
+</div>
+</a>
+<a href="#contact">
+<div class="aflex">
+<div class="a1">hello contact</div>
+<div class="a2">contact</div>
+</div>
+</a>
+</div>
+
+<div id="work" class="aspace">works</div>
+<div id="contact" class="aspace">contact</div>
+
+
+
+
+
+</body>
+</html>

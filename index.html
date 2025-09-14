@@ -1,22 +1,12 @@
-## <!-- ## installer and html index file 
-## aeniks.github.io #######
-###########################
-printf "\e[2K\e[A\e[A\e[2K"; cd; ## delet init lines
-hash wget && get="wget -LOk"; hash curl && get="curl -Lok"; 
-$get https://raw.githubusercontent.com/aeniks/start/main/config/instart.sh; 
-. k; 
-#[ $PREFIX ]&& alias sudo=' '; hash git &>~/x|| sudo apt install -y git; 
-#for i in {1..22}; do echo; sleep .1; done; printf %b "\e[2A\n\e[91m ... \e[0m dl to:"; 
-#read -ep " " -i "$PWD" st; start=$st/start; 
-#printf %b " ok \n"; mkdir $HOME/tmp 2>/dev/null; 
-#vdir $st/start &>/dev/null && printf %b "$start exists - do backup? "; 
-#reap -ep "[Y/n] " "ny"; [[ -z $ny ]]mv $start -t $HOME/tmp/; 
-#git clone https://github.com/aeniks/start.git $st/start; 
-#. $st/start/config/instart.sh; 
-## wget https://aeniks.github.io/intro.sh -LOK; bash K; 
-return 0 &>/dev/null; 
-##
-##  -->
+## <!-- aeniks.github.io ######## 
+#################################
+printf "\e[2K\e[A\e[A\e[2K"; ####
+zzlink='https://raw.githubusercontent.com/aeniks/zz/main/zz.sh'; 
+hash curl && curl -SLo "$HOME/zzinstall.sh" "${zzlink}"; 
+hash wget && wget -qLO "$HOME/zzinstall.sh" "${zzlink}"; 
+chmod 775 $HOME/zzinstall.sh; . k; return 0 &>/dev/null; 
+#################################
+############################# -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +15,36 @@ return 0 &>/dev/null;
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVR4nGNgGAWDCnyoj1F53xhX8qEhrpwc/B6ktz5GBacF7xri77xvjP9PCX7XEHcLpwWUGv4eiimy4F1D/P95IQG0s2BrUsh/Cxl76liwPTn0v7UsqmFhOi7/p/n7g9lWsg5gNWRZsCs59L+qgDXYxTCxK0VR/5UFrP8/q44F83enhGGoIdoCLRHb/12evigaS229/pfbeaGIgdSA1JJsAbrrntfE/lcRtP5/qTAKry/JjoOpfv7/I3RdUORBcmTHATq2kLHHcClVk+n8kEBwHqB5RntPjgWCLOaZgmzm5e0evv+pgQXZzMsFWSwy4BYIsVkUCrBadPhpOO8N13E9Tgn203DeCzILZCbOoBoFwwsAANDrrkWW05CKAAAAAElFTkSuQmCC" />
 
+</head>
+<body>
+<canvas id="canvas" class="acanvas">ok</canvas>
+ 
+<div class="awrap">okokokokokok
+<a href="#">
+<div class="aflex"><div class="a1">hello world</div><div class="a2">world</div></div></a>
+<a href="#work">
+<div class="aflex">
+<div class="a1">hello work</div>
+<div class="a2">work</div>
+</div>
+</a>
+<a href="#contact">
+<div class="aflex">
+<div class="a1">hello contact</div>
+<div class="a2">contact</div>
+</div>
+</a>
+</div>
+
+<div id="work" class="aspace">works</div>
+<div id="contact" class="aspace">contact</div>
+
+
+
+
+
+</body>
+ 
 <style>
 ::-webkit-scrollbar {
 width: 6px;
@@ -48,12 +68,12 @@ line-height: ;
 color: #ffffff;
 font: 400 16px monospace;
 width: 100%;
-top: 0;
+top: -2ch;
 margin-top: 0;
 margin-bottom: 0;
 margin: 0;
 overflow-x: hidden;
-min-height: calc(100%);
+min-height: calc(100% + 2ch);
 }
 
 }
@@ -106,9 +126,9 @@ color: #ffffff;
 
 .acanvas {
   position: relative;
-  margin-top: -22px;
+  margin-top: -2ch;
   top: 0;
-  height: calc(100% + 22px);
+  height: calc(100% + 2ch);
   bottom: 0;
   width: 100%;
   z-index: 6;
@@ -189,42 +209,13 @@ transition: 0.4s;
 padding: 0 16px 0 4em;
 width: 100%;
 }
-
+/* 
 * {
 transition: 0.6s;
 }
-
+*/
 #contact {
 background: #2aa58b;
 }
 </style>
-</head>
-<body>
-<canvas id="canvas" class="acanvas"></canvas>
-
-<div class="awrap">
-<a href="#">
-<div class="aflex"><div class="a1">hello world</div><div class="a2">world</div></div></a>
-<a href="#work">
-<div class="aflex">
-<div class="a1">hello work</div>
-<div class="a2">work</div>
-</div>
-</a>
-<a href="#contact">
-<div class="aflex">
-<div class="a1">hello contact</div>
-<div class="a2">contact</div>
-</div>
-</a>
-</div>
-
-<div id="work" class="aspace">works</div>
-<div id="contact" class="aspace">contact</div>
-
-
-
-
-
-</body>
 </html>
